@@ -84,7 +84,7 @@ export default function App() {
   const handleReplayTrace = async () => {
     setIsReplayingTrace(true);
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/trace/simulate', {
+      const response = await fetch('https://ecosched-backend.onrender.com/api/trace/simulate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
       });
